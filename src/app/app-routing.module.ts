@@ -1,6 +1,7 @@
 
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { MyProjectComponent } from './my-project/my-project.component';
 import { ChessBoardComponent } from './chess-board/chess-board.component';
 import { MyResumeComponent } from './my-resume/my-resume.component';
 import { TaskManagerComponent } from './task-manager/task-manager.component';
@@ -8,8 +9,12 @@ import { TaskManagerComponent } from './task-manager/task-manager.component';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '',
+    redirectTo: '/my-project',
     pathMatch: 'full'
+  },
+  {
+    path: 'my-project',
+    component: MyProjectComponent
   },
   {
     path: 'chess-board',

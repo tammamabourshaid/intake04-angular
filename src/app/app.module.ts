@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { ChessBoardComponent } from './chess-board/chess-board.component';
 import { MyResumeComponent } from './my-resume/my-resume.component';
 import { TaskManagerComponent } from './task-manager/task-manager.component';
+import { MyProjectComponent } from './my-project/my-project.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ChessBoardComponent,
     MyResumeComponent,
-    TaskManagerComponent
+    TaskManagerComponent,
+    MyProjectComponent
   ],
   imports: [
     BrowserModule,
