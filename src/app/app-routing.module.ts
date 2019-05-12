@@ -3,12 +3,12 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ChessBoardComponent } from './chess-board/chess-board.component';
 import { MyResumeComponent } from './my-resume/my-resume.component';
-import { TaskMangerComponent } from './task-manger/task-manger.component';
+import { TaskManagerComponent } from './task-manager/task-manager.component';
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/projects',
+    redirectTo: '',
     pathMatch: 'full'
   },
   {
@@ -17,7 +17,7 @@ const routes: Routes = [
   },
   {
     path: 'task-manager',
-    component: TaskMangerComponent
+    component: TaskManagerComponent
   },
   {
     path: 'my-resume',

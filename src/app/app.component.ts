@@ -6,6 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  //someText = "refugees {code}";
-  title = 'i4-angularJs';
+  title = 'My Project';
 }

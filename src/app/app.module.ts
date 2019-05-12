@@ -5,14 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ChessBoardComponent } from './chess-board/chess-board.component';
 import { MyResumeComponent } from './my-resume/my-resume.component';
-import { TaskMangerComponent } from './task-manger/task-manger.component';
+import { TaskManagerComponent } from './task-manager/task-manager.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ChessBoardComponent,
     MyResumeComponent,
-    TaskMangerComponent
+    TaskManagerComponent
   ],
   imports: [
     BrowserModule,
