@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./my-resume.component.scss']
 })
 export class MyResumeComponent implements OnInit {
+  someText = "refugees {code}";
 
   constructor() { }
 
