@@ -1,10 +1,10 @@
-
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MyProjectComponent } from './my-project/my-project.component';
 import { ChessBoardComponent } from './chess-board/chess-board.component';
 import { MyResumeComponent } from './my-resume/my-resume.component';
 import { TaskManagerComponent } from './task-manager/task-manager.component';
+import { ChildTaskmanagerComponent } from './task-manager/child-taskmanager/child-taskmanager.component';
 
 const routes: Routes = [
   {
@@ -23,6 +23,10 @@ const routes: Routes = [
   {
     path: 'task-manager',
     component: TaskManagerComponent
+  },
+  {
+    path: 'child-taskmanager',
+    component: ChildTaskmanagerComponent
   },
   {
     path: 'my-resume',

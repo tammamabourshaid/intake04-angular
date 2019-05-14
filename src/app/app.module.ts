@@ -7,6 +7,7 @@ import { ChessBoardComponent } from './chess-board/chess-board.component';
 import { MyResumeComponent } from './my-resume/my-resume.component';
 import { TaskManagerComponent } from './task-manager/task-manager.component';
 import { MyProjectComponent } from './my-project/my-project.component';
+import { ChildTaskmanagerComponent } from './task-manager/child-taskmanager/child-taskmanager.component';
 
 @NgModule({
   declarations: [
@@ -14,13 +15,11 @@ import { MyProjectComponent } from './my-project/my-project.component';
     ChessBoardComponent,
     MyResumeComponent,
     TaskManagerComponent,
-    MyProjectComponent
+    MyProjectComponent,
+    ChildTaskmanagerComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
