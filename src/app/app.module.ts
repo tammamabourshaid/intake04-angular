@@ -7,7 +7,7 @@ import { ChessBoardComponent } from './chess-board/chess-board.component';
 import { MyResumeComponent } from './my-resume/my-resume.component';
 import { TaskManagerComponent } from './task-manager/task-manager.component';
 import { MyProjectComponent } from './my-project/my-project.component';
-import { ChildTaskmanagerComponent } from './task-manager/child-taskmanager/child-taskmanager.component';
+import { ChildTaskmanagerComponent } from './child-taskmanager/child-taskmanager.component';
 
 @NgModule({
   declarations: [
