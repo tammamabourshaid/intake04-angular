@@ -18,7 +18,7 @@ export class TaskFormComponent implements OnInit {
   ngOnInit() {
     this.formGroup = this.formBuilder.group({
       name: ['', Validators.required],
-      description: ['Sleep during the night'],
+      description: [''],
       type: ['private'],
       finished: []
     });
