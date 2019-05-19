@@ -5,6 +5,7 @@ import { ChessBoardComponent } from './chess-board/chess-board.component';
 import { MyResumeComponent } from './my-resume/my-resume.component';
 import { TaskManagerComponent } from './task-manager/task-manager.component';
 import { ChildTaskmanagerComponent } from './child-taskmanager/child-taskmanager.component';
+import { TaskFormComponent } from './task-form/task-form.component';
 
 const routes: Routes = [
   {
@@ -15,6 +16,10 @@ const routes: Routes = [
   {
     path: 'my-project',
     component: MyProjectComponent
+  },
+  {
+    path: 'my-resume',
+    component: MyResumeComponent
   },
   {
     path: 'chess-board',
@@ -28,9 +33,10 @@ const routes: Routes = [
     path: 'child-taskmanager',
     component: ChildTaskmanagerComponent
   },
+
   {
-    path: 'my-resume',
-    component: MyResumeComponent
+    path: 'task-form',
+    component: TaskFormComponent
   }
 ];
 
