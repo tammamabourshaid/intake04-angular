@@ -9,6 +9,8 @@ import { ChessBoardComponent } from './chess-board/chess-board.component';
 import { TaskManagerComponent } from './task-manager/task-manager.component';
 import { ChildTaskmanagerComponent } from './child-taskmanager/child-taskmanager.component';
 import { TaskFormComponent } from './task-form/task-form.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ import { TaskFormComponent } from './task-form/task-form.component';
     ChildTaskmanagerComponent,
     TaskFormComponent
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule, HttpClientModule],
+
   providers: [],
   bootstrap: [AppComponent]
 })

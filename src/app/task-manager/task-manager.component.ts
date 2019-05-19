@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild, ViewContainerRef } from '@angular/core';
 import { Task } from 'src/task';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-task-manager',
@@ -7,7 +8,7 @@ import { Task } from 'src/task';
   styleUrls: ['./task-manager.component.scss']
 })
 export class TaskManagerComponent implements OnInit {
-  tasks: Array<Task> = [{ name: '....', description: '', type: 'event', finished: true }];
+  tasks: Array<Task> = [{ name: 'text', description: '', type: 'event', finished: true }];
   rootElement: Object;
   constructor() {}
 
