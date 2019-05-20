@@ -1,6 +1,5 @@
 import { Component, OnInit, ViewChild, ViewContainerRef } from '@angular/core';
 import { Task } from 'src/task';
-import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-task-manager',
