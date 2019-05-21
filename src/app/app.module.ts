@@ -7,7 +7,7 @@ import { MyProjectComponent } from './my-project/my-project.component';
 import { MyResumeComponent } from './my-resume/my-resume.component';
 import { ChessBoardComponent } from './chess-board/chess-board.component';
 import { TaskManagerComponent } from './task-manager/task-manager.component';
-import { ChildTaskmanagerComponent } from './child-taskmanager/child-taskmanager.component';
+import { TaskmanagerListComponent } from './taskmanager-list/taskmanager-list.component';
 import { TaskFormComponent } from './task-form/task-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
@@ -20,7 +20,7 @@ import { AddTasksComponent } from './add-tasks/add-tasks.component';
     MyResumeComponent,
     TaskManagerComponent,
     MyProjectComponent,
-    ChildTaskmanagerComponent,
+    TaskmanagerListComponent,
     TaskFormComponent,
     AddTasksComponent
   ],
