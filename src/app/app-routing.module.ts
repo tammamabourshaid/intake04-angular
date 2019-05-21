@@ -6,6 +6,7 @@ import { MyResumeComponent } from './my-resume/my-resume.component';
 import { TaskManagerComponent } from './task-manager/task-manager.component';
 import { ChildTaskmanagerComponent } from './child-taskmanager/child-taskmanager.component';
 import { TaskFormComponent } from './task-form/task-form.component';
+import { AddTasksComponent } from './add-tasks/add-tasks.component';
 
 const routes: Routes = [
   {
@@ -33,10 +34,13 @@ const routes: Routes = [
     path: 'child-taskmanager',
     component: ChildTaskmanagerComponent
   },
-
   {
     path: 'task-form',
     component: TaskFormComponent
+  },
+  {
+    path: 'add-tasks',
+    component: AddTasksComponent
   }
 ];
 

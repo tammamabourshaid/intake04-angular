@@ -11,6 +11,7 @@ import { ChildTaskmanagerComponent } from './child-taskmanager/child-taskmanager
 import { TaskFormComponent } from './task-form/task-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { AddTasksComponent } from './add-tasks/add-tasks.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HttpClientModule } from '@angular/common/http';
     TaskManagerComponent,
     MyProjectComponent,
     ChildTaskmanagerComponent,
-    TaskFormComponent
+    TaskFormComponent,
+    AddTasksComponent
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule, HttpClientModule],
 
