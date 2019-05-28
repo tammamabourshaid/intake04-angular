@@ -1,4 +1,7 @@
+import { Task } from 'src/task';
+import { Observable } from 'rxjs';
 import { Component, OnInit } from '@angular/core';
+import { TaskService } from '../task.service';
 
 @Component({
   selector: 'app-taskmanager-list',
@@ -6,7 +9,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./taskmanager-list.component.scss']
 })
 export class TaskmanagerListComponent implements OnInit {
-  constructor() {}
+  tasks: Observable<any>;
 
-  ngOnInit() {}
+  constructor(private service: TaskService) {}
+
+  ngOnInit() {
+    this.tasks = this.service.getTasks();
+  }
+
+  delete(task: Task) {
+    this.service.deleteTask(task);
+  }
 }

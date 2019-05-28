@@ -1,12 +1,12 @@
-
 <div class="container">
   <h3>Task Manager List</h3>
 
-          <div class="container">
-
-            <ul class="elements">
-              <li>Buy the grocery <span class="badge">50 %</span></li>
-              <li>Pay the Rent <span class="badge">100 %</span></li>
-
-            </ul>
-          </div>
+  <div class="container">
+    <ul class="elements" *ngIf="tasks | async as result">
+      <li *ngFor="let task of result">
+        {{ task.name }} <span class="badge">{{ task.finished }}</span>
+        <button (click)="delete(task)">Delete</button>
+      </li>
+    </ul>
+  </div>
+</div>

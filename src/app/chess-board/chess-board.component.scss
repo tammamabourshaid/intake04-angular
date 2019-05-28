@@ -1,4 +1,6 @@
 .chessboard {
+  display: flexbox;
+  align-self: auto;
   width: 640px;
   height: 640px;
   margin: auto;
